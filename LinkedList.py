@@ -57,7 +57,7 @@ class LinkedList:
         """recursive remove method"""
         if a_node is None:
             return a_node
-        elif a_node.val == val:
+        elif a_node.data == val:
             return a_node.next
         else:
             a_node.next = self.rec_remove(a_node.next, val)
@@ -123,3 +123,4 @@ class LinkedList:
         returns False otherwise
         """
         return self._head is None
+
